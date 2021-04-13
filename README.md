@@ -7,5 +7,5 @@
 3. npm install
 4. npm start
 
-You will need to insert your own API KEY inside .env_sample
+You will need to rename .env_sample to .env and insert your own API KEY inside .env
 
