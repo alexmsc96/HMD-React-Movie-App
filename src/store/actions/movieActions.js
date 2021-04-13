@@ -1,6 +1,8 @@
 import axios from "../../axios";
 import * as actionTypes from "./actionTypes";
 
+const apiKey = process.env.REACT_APP_TMDB_KEY
+
 export const getPopularSuccess = (response) => {
   return {
     type: actionTypes.GET_POPULAR_SUCCESS,
@@ -18,7 +20,7 @@ export const getPopularFailed = (error) => {
 export const getPopular = () => {
   return (dispatch) => {
     axios
-      .get("movie/popular")
+      .get(`movie/popular?api_key=${apiKey}`)
       .then((response) => {
         dispatch(getPopularSuccess(response));
       })
@@ -45,7 +47,7 @@ export const getUpcomingFailed = (error) => {
 export const getUpcoming = () => {
   return (dispatch) => {
     axios
-      .get("movie/upcoming")
+      .get(`movie/upcoming?api_key=${apiKey}`)
       .then((response) => {
         dispatch(getUpcomingSuccess(response));
       })
@@ -72,7 +74,7 @@ export const getLatestFailed = (error) => {
 export const getLatest = () => {
   return (dispatch) => {
     axios
-      .get(`movie/now_playing`)
+      .get(`movie/now_playing?api_key=${apiKey}`)
       .then((response) => {
         dispatch(getLatestSuccess(response));
       })
@@ -140,7 +142,7 @@ export const getSimilarMoviesFailed = (error) => {
 export const getSimilarMovies = (id) => {
   return (dispatch) => {
     axios
-      .get(`/movie/${id}/similar`)
+      .get(`/movie/${id}/similar?api_key=${apiKey}`)
       .then((response) => {
         dispatch(getSimilarMoviesSuccess(response));
       })
@@ -175,7 +177,7 @@ export const movieSearchFailed = (error) => {
 export const movieSearch = (query) => {
   return (dispatch) => {
     axios
-      .get(`/search/movie?&query=${query}`)
+      .get(`/search/movie?api_key=${apiKey}&language=en-US&query=${query}&page=1&include_adult=false`)
       .then((response) => {
         dispatch(movieSearchSuccess(response));
       })
@@ -202,7 +204,7 @@ export const getMovieCreditsFailed = (error) => {
 export const getMovieCredits = (id) => {
   return (dispatch) => {
     axios
-      .get(`/movie/${id}/credits`)
+      .get(`/movie/${id}/credits?api_key=${apiKey}`)
       .then((response) => {
         dispatch(getMovieCreditsSuccess(response));
       })
