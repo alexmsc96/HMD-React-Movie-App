@@ -115,7 +115,7 @@ export const getMovieDetailsFailed = (error) => {
 export const getMovieDetails = (id) => {
   return (dispatch) => {
     axios
-      .get(`/movie/${id}`)
+      .get(`/movie/${id}?api_key=${apiKey}`)
       .then((response) => {
         dispatch(getMovieDetailsSuccess(response));
       })
