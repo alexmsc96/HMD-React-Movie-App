@@ -1,0 +1,20 @@
+@import "../../utilities/utility-classes.scss";
+
+.Container {
+  .Title {
+    @include Header;
+    font-family: $secondary-font;
+    font-weight: $fw-light;
+    font-size: $fsize-xxl;
+    margin: 1rem 0;
+    text-shadow: $text-shadow;
+    letter-spacing: -4px;
+  }
+}
+
+.MovieCarousel {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}

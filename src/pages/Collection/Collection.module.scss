@@ -1,0 +1,33 @@
+@import "../../utilities/utility-classes.scss";
+
+.Container {
+  @include Container;
+  min-height: 100vh;
+  position: relative;
+  .Title {
+    @include Header;
+    font-family: $secondary-font;
+    font-weight: $fw-light;
+    font-size: $fsize-xxl;
+    margin: 1rem 0;
+    text-shadow: $text-shadow;
+    letter-spacing: -4px;
+  }
+  .MovieCarousel {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+
+  .NoMovie {
+    text-align: center;
+    h1 {
+      font-size: $fsize-xxl;
+      color: $text-color-grey;
+      opacity: 0.5;
+      font-family: $primary-font;
+      font-weight: $fw-black;
+    }
+  }
+}

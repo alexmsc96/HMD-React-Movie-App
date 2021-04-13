@@ -1,0 +1,30 @@
+@import "../../utilities/utility-classes.scss";
+
+.MobileHeader {
+  height: min-content;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  background-color: $primary-color;
+
+  .MobileNav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include Container;
+  }
+
+  @media (min-width: 1025px) {
+    display: none;
+  }
+}
+
+.WebHeader {
+  height: max-content;
+  position: sticky;
+  top: 0;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+}

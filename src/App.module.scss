@@ -1,0 +1,39 @@
+@import "./utilities/utility-classes.scss";
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $primary-font;
+  background: $primary-color;
+  overflow-x: hidden;
+  min-height: 100vh;
+  margin-bottom: 1rem;
+}
+
+@media (min-width: 1025px) {
+  .App {
+    display: grid;
+    grid-template-areas:
+      "header" "content"
+      "header" "content";
+
+    grid-template-columns: 1fr 4fr;
+    position: relative;
+  }
+}
+
+@media (min-width: 1440px) {
+  .App {
+    grid-template-columns: 25rem 5fr;
+  }
+}

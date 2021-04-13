@@ -1,0 +1,16 @@
+export {
+  getPopular,
+  getLatest,
+  getUpcoming,
+  addMovieToWatchlist,
+  removeMovieFromWatchlist,
+  getMovieDetails,
+  getSimilarMovies,
+  movieDetailReset,
+  movieSearch,
+  setQuery,
+  resetSearchList,
+  toggleSearch,
+  toggleNav,
+  getMovieCredits,
+} from "./movieActions";

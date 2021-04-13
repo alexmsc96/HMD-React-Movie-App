@@ -1,0 +1,62 @@
+@import "../../utilities/utility-classes.scss";
+
+.MovieCast {
+  @include Container;
+  overflow-x: hidden;
+
+  h2 {
+    font-size: $fsize-l;
+    letter-spacing: -2px;
+    font-weight: $fw-light;
+    color: $text-color-grey;
+    margin: 1rem 0;
+  }
+
+  .Slide {
+    position: relative;
+    overflow-x: hidden;
+
+    &::after {
+      box-shadow: inset 0px -30px 20px -9px rgba($color: black, $alpha: 1);
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+    .NoBackdrop {
+      height: 10rem;
+    }
+  }
+
+  img {
+    width: 100%;
+    display: block;
+  }
+
+  @media (min-width: 1024px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .ActorName {
+    position: absolute;
+    bottom: 1%;
+    left: 1%;
+    z-index: 2;
+
+    p {
+      font-size: $fsize-s;
+      color: $text-color-grey;
+      font-weight: $fw-light;
+      opacity: 0.8;
+    }
+  }
+}
+
+.SwiperContainer {
+  @media (min-width: 300px) {
+    width: 100%;
+  }
+}

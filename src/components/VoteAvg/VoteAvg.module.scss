@@ -1,0 +1,18 @@
+@import "../../utilities/utility-classes.scss";
+
+.VoteAvg {
+  background-color: $accent-color;
+  min-width: 4rem;
+  min-height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  p {
+    font-family: $primary-font;
+    font-size: $fsize-s;
+    color: $text-color-white;
+    font-weight: $fw-regular;
+  }
+}

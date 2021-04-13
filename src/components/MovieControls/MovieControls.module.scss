@@ -1,0 +1,17 @@
+@import "../../utilities/utility-classes.scss";
+
+.IconContainer {
+  @include IconContainer;
+  margin: 1rem;
+
+  &:hover {
+    .Icon {
+      transform: scale(1.3);
+    }
+  }
+
+  .Icon {
+    @include Icon;
+    transition: $basic-transition;
+  }
+}

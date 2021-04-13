@@ -1,0 +1,12 @@
+@import "../../../utilities/utility-classes.scss";
+
+.Icon {
+  @include Icon;
+  font-size: $fsize-xxl;
+  transition: $basic-transition;
+  color: $accent-color;
+
+  &:hover {
+    color: $text-color-grey;
+  }
+}

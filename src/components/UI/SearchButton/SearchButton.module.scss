@@ -1,0 +1,28 @@
+@import "../../../utilities/utility-classes.scss";
+
+.MobileIconContainer {
+  @include IconContainer;
+  .Icon {
+    @include Icon;
+  }
+
+  @media (min-width: 1025px) {
+    display: none;
+  }
+}
+
+.WebIconContainer {
+  @include IconContainer;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 1rem;
+
+  @media (max-width: 1024px) {
+    display: none;
+  }
+
+  .Icon {
+    @include Icon;
+  }
+}

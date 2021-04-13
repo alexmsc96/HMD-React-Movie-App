@@ -1,0 +1,38 @@
+@import "../../utilities/utility-classes.scss";
+
+.About {
+  @include Container;
+  margin-top: 1rem;
+  h1 {
+    @include Header;
+    font-size: $fsize-xxl;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    font-size: $fsize-m;
+    color: $text-color-grey;
+    margin-bottom: 1rem;
+  }
+
+  .Contact {
+    @include Flex(flex-start, center, row);
+
+    a {
+      color: $text-color-grey;
+      text-decoration: none;
+      font-size: $fsize-l;
+      transition: $basic-transition;
+
+      &:hover {
+        color: $accent-color;
+      }
+    }
+  }
+
+  .Icon {
+    @include Icon;
+    color: $accent-color;
+    margin-right: 1rem;
+  }
+}

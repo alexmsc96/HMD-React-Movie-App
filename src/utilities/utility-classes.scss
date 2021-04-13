@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo:wght@300;400;900&family=Roboto+Condensed:wght@300;400&display=swap");
+
+// Exo Light Regular
+// Robot Condensed Light Regular
+
+// $primary-color: 273640
+// $secondary-color: 405968
+// $accent-color: 239d7f
+
+// font-family: 'Exo', sans-serif;
+// font-family: 'Roboto Condensed', sans-serif;
+
+//COLOR VARIABLES
+$primary-color: #273640;
+$secondary-color: #405968;
+$accent-color: #239d7f;
+
+$text-color-white: rgb(231, 231, 231);
+$text-color-grey: #ccc;
+
+//FONT VARIABLES
+$primary-font: "Exo", sans-serif;
+$secondary-font: "Roboto Condensed", sans-serif;
+
+$fsize-xxl: 5rem;
+$fsize-xl: 3rem;
+$fsize-l: 2.5rem;
+$fsize-m: 2rem;
+$fsize-s: 1.5rem;
+$fsize-xs: 1rem;
+
+$fw-light: 300;
+$fw-regular: 400;
+$fw-black: 900;
+
+// WIDTH
+$desktop-width: 75%;
+$mobile-width: 95%;
+
+//MIXINS
+@mixin Container($width: 95%) {
+  width: $width;
+  margin: 0 auto;
+}
+
+@mixin Flex($justify-content, $align-items, $flex-direction) {
+  display: flex;
+  justify-content: $justify-content;
+  align-items: $align-items;
+  flex-direction: $flex-direction;
+}
+
+@mixin Header {
+  font-family: $primary-font;
+  font-weight: $fw-light;
+  text-transform: capitalize;
+  color: $text-color-grey;
+}
+
+@mixin P {
+  font-family: $secondary-font;
+  font-weight: $fw-light;
+  font-size: $fsize-m;
+  color: $text-color-grey;
+}
+
+@mixin IconContainer {
+  width: min-content;
+  height: min-content;
+  background-color: $accent-color;
+  border-radius: 50%;
+  width: 4rem;
+  height: 4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: $small-box-shadow;
+  cursor: pointer;
+}
+
+@mixin Icon {
+  color: $text-color-grey;
+  font-size: $fsize-l;
+  cursor: pointer;
+}
+
+// Effects
+
+$box-shadow: 0px 0px 10px 1px
+  rgba(
+    $color: black,
+    $alpha: 0.3,
+  );
+$small-box-shadow: 0px 0px 3px 1px
+  rgba(
+    $color: black,
+    $alpha: 0.3,
+  );
+
+$text-shadow: 0px 0px 20px
+  rgba(
+    $color: black,
+    $alpha: 0.3,
+  );
+
+$border-rad: 1rem;
+
+$basic-transition: 0.2s ease;
+$slow-transition: 0.5s ease;

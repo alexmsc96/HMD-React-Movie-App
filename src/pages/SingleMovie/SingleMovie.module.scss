@@ -1,0 +1,147 @@
+@import "../../utilities/utility-classes.scss";
+
+.SingleMovie {
+  grid-area: "content";
+  overflow-x: hidden;
+
+  .Backdrop {
+    width: 100%;
+    height: 60vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    position: relative;
+    .Title {
+      font-size: $fsize-xxl;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: $text-color-grey;
+      opacity: 0.5;
+    }
+
+    &::after {
+      box-shadow: inset 0px -80px 40px -20px
+        rgba($color: $primary-color, $alpha: 1);
+      content: "";
+      display: block;
+      height: 50%;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .InnerBackdrop {
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+    }
+
+    @media (max-width: 767px) {
+      display: none;
+    }
+
+    @media (min-width: 1024px) {
+      width: 100%;
+      height: 30vw;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 1025px) {
+      width: 100%;
+      height: 30vw;
+      margin: 0 auto;
+    }
+  }
+}
+
+.IconContainer {
+  @include IconContainer;
+  position: absolute;
+  top: 0;
+  .Icon {
+    @include Icon;
+  }
+}
+
+.Back {
+  margin: 1rem;
+}
+
+.Poster {
+  position: relative;
+
+  &::after {
+    box-shadow: inset 0px -60px 20px -40px
+      rgba($color: $primary-color, $alpha: 1);
+    content: "";
+    display: block;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+  }
+
+  .PosterImg {
+    width: 100%;
+    display: block;
+  }
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.Container {
+  @include Container;
+  z-index: -1;
+  margin-bottom: 1rem;
+
+  @media (min-width: 1024px) {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .MovieHeading {
+    @include Flex(space-between, center, row);
+    width: 100%;
+    margin-top: 1rem;
+    position: relative;
+
+    h1 {
+      @include Header;
+      letter-spacing: -2px;
+      font-size: $fsize-xl;
+      line-height: 1.1;
+      flex: 2;
+    }
+  }
+
+  .MovieParagraph {
+    .GenreList {
+      font-size: $fsize-s;
+    }
+
+    p {
+      @include P;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.25px;
+    }
+  }
+
+  .MovieInfo {
+    h2 {
+      @include P;
+      letter-spacing: -2px;
+      opacity: 0.5;
+    }
+    p {
+      @include P;
+      letter-spacing: -2px;
+    }
+    div {
+      columns: 2;
+    }
+  }
+}

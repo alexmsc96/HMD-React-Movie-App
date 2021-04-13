@@ -1,0 +1,16 @@
+@import "../../../utilities/utility-classes.scss";
+
+.Logo {
+  width: min-content;
+  height: min-content;
+  margin: 0 auto;
+  .LogoText {
+    font-family: $primary-font;
+    font-weight: $fw-black;
+    font-size: $fsize-xxl;
+    color: $accent-color;
+    text-shadow: $text-shadow;
+    text-decoration: none;
+    letter-spacing: -6px;
+  }
+}
