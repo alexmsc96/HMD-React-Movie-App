@@ -3,8 +3,10 @@
 .CardContent {
   flex: 1 1 calc(50%-20px);
   max-width: 25rem;
+  min-width: 20rem;
   position: relative;
   transition: $basic-transition;
+  margin: 1rem;
 
   &:hover {
     transform: translateY(-1%);
