@@ -1,5 +1,5 @@
 # Home Movie Database
-
+![HMD](https://user-images.githubusercontent.com/62430558/114782071-31198f00-9d82-11eb-82fb-c32c6abb4d72.png)
 _TMDB API, React, Redux, React-Router, Axios, SCSS Swiper_
 
 ## Description
@@ -14,7 +14,7 @@ This application consists of a movie app where the users are able to:
 
 ## Demo
 
-https://hmd-react.herokuapp.com/
+**[Check it out](https://hmd-react.herokuapp.com/)**
 
 ## To run locally
 
