@@ -27,8 +27,10 @@ Additionally, you need rename .env_sample to .env and add your own API key insid
 
 ### Thoughts
 
-My second React.js application. I really enjoyed designing the application and the thought process on how to split it into components
-Saw the advantages of using redux for state management and the axios instance
+For my second React.js application, I really enjoyed designing the application and the thought process on how to split it into React components
+Saw the advantages of using redux for state management and the axios instance for faster coding.
+
+### Goals 
 For the future:
 
 - split reducers
