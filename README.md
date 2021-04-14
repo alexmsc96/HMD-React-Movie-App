@@ -1,5 +1,5 @@
 # Home Movie Database
-*TMDB API, React, Redux, React-Router, Axios, SCSS*
+*TMDB API, React, Redux, React-Router, Axios, SCSS Swiper*
 
 ## Description
 This application consists of a movie app where the users are able to:
