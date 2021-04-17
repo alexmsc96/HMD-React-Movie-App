@@ -1,5 +1,6 @@
 # Home Movie Database
-![HMD](https://user-images.githubusercontent.com/62430558/114782071-31198f00-9d82-11eb-82fb-c32c6abb4d72.png)
+![HMD mock-up](https://user-images.githubusercontent.com/62430558/115125734-ce6b0200-9fd2-11eb-8287-fc3fb0a09b35.png)
+
 _TMDB API, React, Redux, React-Router, Axios, SCSS Swiper_
 
 ## Description
